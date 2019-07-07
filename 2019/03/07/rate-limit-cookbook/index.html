@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>Context timeout cancellation for Grpc | Wdxxl&#39;s Blog</title>
+<title>Rate Limit cookbook | Wdxxl&#39;s Blog</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Wdxxl&#39;s Blog" type="application/atom+xml">
@@ -132,9 +132,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Context timeout cancellation for Grpc">
+        <h1 id="Rate Limit cookbook">
             
-	            Context timeout cancellation for Grpc
+	            Rate Limit cookbook
             
         </h1>
         <div class="post-meta">
@@ -142,8 +142,8 @@
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/Golang">
-            Golang
+        <a href="/categories/MicroService">
+            MicroService
         </a>
     </span>
     
@@ -158,8 +158,12 @@
                         Golang
                     </a>
                 
-                    <a href="/tags/GPRC" title="GPRC">
-                        GPRC
+                    <a href="/tags/MicroService" title="MicroService">
+                        MicroService
+                    </a>
+                
+                    <a href="/tags/RateLimit" title="RateLimit">
+                        RateLimit
                     </a>
                 
             
@@ -171,7 +175,7 @@
         
         <span class="fa-wrap">
             <i class="fa fa-clock-o"></i>
-            <span class="date-meta">2019/01/19</span>
+            <span class="date-meta">2019/03/07</span>
         </span>
         
     
@@ -182,7 +186,54 @@
     </div>
     
     <div class="post-body post-content">
-        <p>Common Code demo for make sure grpc client sent an timeout context to grpc server will not do anything.<br><a id="more"></a></p>
+        <p>Rate Limit Cookbook</p>
+<a id="more"></a>
+<blockquote><p>Leaky Bucket &amp; Token Bucket</p>
+<p>Grab Quotas <a href="https://engineering.grab.com/quotas-service" target="_blank" rel="noopener">https://engineering.grab.com/quotas-service</a><br>DoorMan <a href="https://github.com/youtube/doorman/blob/master/doc/design.md" target="_blank" rel="noopener">https://github.com/youtube/doorman/blob/master/doc/design.md</a><br>uber-go <a href="https://github.com/uber-go/ratelimit" target="_blank" rel="noopener">https://github.com/uber-go/ratelimit</a></p>
+<footer><strong>RateLimiting -</strong><cite><a href="https://github.com/golang/go/wiki/RateLimiting" target="_blank" rel="noopener">github.com/golang/go/wiki/RateLimiting</a></cite></footer></blockquote>
+<table>
+<thead>
+<tr>
+<th>Problems</th>
+<th>Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cascading Failure</td>
+<td>1. Rate Limiting</td>
+</tr>
+<tr>
+<td>Going Viral</td>
+<td>2. Pre Scale</td>
+</tr>
+<tr>
+<td>Predictable load increase</td>
+<td>3. Auto Scale</td>
+</tr>
+<tr>
+<td>Bulk job scheduling</td>
+<td>4. Batching Processing</td>
+</tr>
+<tr>
+<td>Popular Posts</td>
+<td>5. Approximate Statistics</td>
+</tr>
+<tr>
+<td></td>
+<td>6. Cache</td>
+</tr>
+<tr>
+<td></td>
+<td>7. Gradual deployments</td>
+</tr>
+<tr>
+<td></td>
+<td>8. Coupling</td>
+</tr>
+</tbody>
+</table>
+<p>TODO: zuul <a href="https://github.com/marcosbarbero/spring-cloud-zuul-ratelimit" target="_blank" rel="noopener">https://github.com/marcosbarbero/spring-cloud-zuul-ratelimit</a></p>
 
     </div>
     
@@ -200,15 +251,15 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/2019/02/22/table-driven-tests-for-golang/" class="pre-post btn btn-default" title="Table Driven Tests For Golang">
+        <a href="/2019/03/10/iaas-terraform-in-grab/" class="pre-post btn btn-default" title="Iaas Terraform">
             <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">Table Driven Tests For Golang</span>
+            <span class="hidden-xs">Iaas Terraform</span>
         </a>
     
     
-        <a href="/2019/01/19/distributed-tracing-in-grab-gophercon-sg-2017/" class="next-post btn btn-default" title="Distributed Tracing In Grab - GopherCon SG 2017">
+        <a href="/2019/02/22/table-driven-tests-for-golang/" class="next-post btn btn-default" title="Table Driven Tests For Golang">
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">Distributed Tracing In Grab - GopherCon SG 2017</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">Table Driven Tests For Golang</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>

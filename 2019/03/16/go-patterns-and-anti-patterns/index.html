@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>Context timeout cancellation for Grpc | Wdxxl&#39;s Blog</title>
+<title>Go语言设计模式与反模式 (Go Pattern &amp; Anti Pattern) | Wdxxl&#39;s Blog</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Wdxxl&#39;s Blog" type="application/atom+xml">
@@ -132,9 +132,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Context timeout cancellation for Grpc">
+        <h1 id="Go语言设计模式与反模式 (Go Pattern &amp; Anti Pattern)">
             
-	            Context timeout cancellation for Grpc
+	            Go语言设计模式与反模式 (Go Pattern &amp; Anti Pattern)
             
         </h1>
         <div class="post-meta">
@@ -158,8 +158,8 @@
                         Golang
                     </a>
                 
-                    <a href="/tags/GPRC" title="GPRC">
-                        GPRC
+                    <a href="/tags/Design Pattern" title="Design Pattern">
+                        Design Pattern
                     </a>
                 
             
@@ -171,7 +171,7 @@
         
         <span class="fa-wrap">
             <i class="fa fa-clock-o"></i>
-            <span class="date-meta">2019/01/19</span>
+            <span class="date-meta">2019/03/16</span>
         </span>
         
     
@@ -182,7 +182,11 @@
     </div>
     
     <div class="post-body post-content">
-        <p>Common Code demo for make sure grpc client sent an timeout context to grpc server will not do anything.<br><a id="more"></a></p>
+        <p>Go语言设计模式与反模式 (Go Pattern &amp; Anti Pattern)<br><a id="more"></a></p>
+<h2 id="Control-Flow"><a href="#Control-Flow" class="headerlink" title="Control Flow"></a>Control Flow</h2><h4 id="Late-Returns-Multiple-if-else"><a href="#Late-Returns-Multiple-if-else" class="headerlink" title="Late Returns / Multiple if-else"></a>Late Returns / Multiple if-else</h4><p><img src="/images/2019-03-16-go-patterns-and-anti-patterns/lateReturns.png" alt=""></p>
+<h2 id="Design-Pattern"><a href="#Design-Pattern" class="headerlink" title="Design Pattern"></a>Design Pattern</h2><h4 id="init"><a href="#init" class="headerlink" title="init()"></a>init()</h4><p><img src="/images/2019-03-16-go-patterns-and-anti-patterns/init.png" alt=""></p>
+<h4 id="Global-Variables-and-Singletons"><a href="#Global-Variables-and-Singletons" class="headerlink" title="Global Variables(and Singletons)"></a>Global Variables(and Singletons)</h4><p><img src="/images/2019-03-16-go-patterns-and-anti-patterns/variables.png" alt=""></p>
+<h2 id="Errors"><a href="#Errors" class="headerlink" title="Errors"></a>Errors</h2><h4 id="Custom-Errors-using-Type-Alias-on-Primitives"><a href="#Custom-Errors-using-Type-Alias-on-Primitives" class="headerlink" title="Custom Errors using Type Alias on Primitives"></a>Custom Errors using Type Alias on Primitives</h4><p><img src="/images/2019-03-16-go-patterns-and-anti-patterns/errors.png" alt=""></p>
 
     </div>
     
@@ -200,15 +204,15 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/2019/02/22/table-driven-tests-for-golang/" class="pre-post btn btn-default" title="Table Driven Tests For Golang">
+        <a href="/2019/06/23/about-me/" class="pre-post btn btn-default" title="About Me">
             <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">Table Driven Tests For Golang</span>
+            <span class="hidden-xs">About Me</span>
         </a>
     
     
-        <a href="/2019/01/19/distributed-tracing-in-grab-gophercon-sg-2017/" class="next-post btn btn-default" title="Distributed Tracing In Grab - GopherCon SG 2017">
+        <a href="/2019/03/10/iaas-terraform-in-grab/" class="next-post btn btn-default" title="Iaas Terraform">
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">Distributed Tracing In Grab - GopherCon SG 2017</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">Iaas Terraform</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>
@@ -251,7 +255,7 @@
     <div class="widget">
         <h3 class="title">Table of Contents</h3>
         
-            <p>暂无目录</p>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Control-Flow"><span class="toc-text">Control Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Late-Returns-Multiple-if-else"><span class="toc-text">Late Returns / Multiple if-else</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Design-Pattern"><span class="toc-text">Design Pattern</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#init"><span class="toc-text">init()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Global-Variables-and-Singletons"><span class="toc-text">Global Variables(and Singletons)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Errors"><span class="toc-text">Errors</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Custom-Errors-using-Type-Alias-on-Primitives"><span class="toc-text">Custom Errors using Type Alias on Primitives</span></a></li></ol></li>
         
     </div>
 </aside>
